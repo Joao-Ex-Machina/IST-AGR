@@ -311,7 +311,7 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -75,
+                "x": -73,
                 "y": -234,
                 "z": 1
             },
@@ -341,7 +341,7 @@
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
                 "x": -66,
-                "y": 163,
+                "y": 176,
                 "z": 1
             },
             {
@@ -776,7 +776,7 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -69,
+                "x": -71,
                 "y": 59,
                 "z": 1
             }
