@@ -1,0 +1,30 @@
+May 30 14:58:36.793 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 30 14:58:36.793 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52063.
+May 30 14:58:36.799 HYPERVISOR: exec_cmd: hypervisor version 
+May 30 14:58:36.799 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips 
+May 30 14:58:36.799 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips
+May 30 14:58:36.800 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/3f09e119-21df-4330-9d69-5a3a6a045a6a 
+May 30 14:58:36.800 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/3f09e119-21df-4330-9d69-5a3a6a045a6a
+May 30 14:58:36.800 HYPERVISOR: exec_cmd: vm create PC4 6 c7200 
+May 30 14:58:36.802 VM: VM PC4 created.
+May 30 14:58:36.803 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5006 
+May 30 14:58:36.803 HYPERVISOR: exec_cmd: c7200 get_mac_addr PC4 
+May 30 14:58:36.803 HYPERVISOR: exec_cmd: vm get_status PC4 
+May 30 14:58:36.804 HYPERVISOR: exec_cmd: vm slot_add_binding PC4 0 0 C7200-IO-FE 
+May 30 14:58:36.805 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
+May 30 14:58:36.805 HYPERVISOR: exec_cmd: vm get_status PC4 
+May 30 14:58:36.806 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x60189214 
+May 30 14:58:36.807 HYPERVISOR: exec_cmd: vm set_ios PC4 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 14:58:36.807 HYPERVISOR: exec_cmd: c7200 set_mac_addr PC4 ca06.335e.0000 
+May 30 14:58:36.808 HYPERVISOR: exec_cmd: vm set_nvram PC4 512 
+May 30 14:58:36.808 HYPERVISOR: exec_cmd: vm set_ram PC4 512 
+May 30 14:58:36.809 HYPERVISOR: exec_cmd: vm get_status PC4 
+May 30 14:58:36.809 HYPERVISOR: exec_cmd: vm slot_add_binding PC4 1 0 PA-FE-TX 
+May 30 14:58:39.539 HYPERVISOR: exec_cmd: nio create_udp udp-09672788-e8f5-4384-b834-5117e4e21c96 10032 127.0.0.1 10033 
+May 30 14:58:39.757 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-09672788-e8f5-4384-b834-5117e4e21c96 
+May 30 14:58:39.758 HYPERVISOR: exec_cmd: vm get_status PC4 
+May 30 17:36:56.343 HYPERVISOR: exec_cmd: vm set_ghost_status PC4 2 
+May 30 17:36:56.344 HYPERVISOR: exec_cmd: vm set_ghost_file PC4 /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+May 30 17:36:56.345 HYPERVISOR: exec_cmd: vm get_status PC4 
+May 30 17:36:56.347 HYPERVISOR: exec_cmd: vm set_config PC4 configs/i6_startup-config.cfg configs/i6_private-config.cfg 
+May 30 17:36:56.347 HYPERVISOR: exec_cmd: vm start PC4 

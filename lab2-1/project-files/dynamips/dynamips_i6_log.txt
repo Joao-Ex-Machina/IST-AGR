@@ -1,0 +1,25 @@
+Jun 06 11:47:03.257 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 11:47:03.257 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34671.
+Jun 06 11:47:03.261 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 11:47:03.262 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips 
+Jun 06 11:47:03.262 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips
+Jun 06 11:47:03.262 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/37295f61-8ba4-4fcd-b890-4809b37a31d6 
+Jun 06 11:47:03.262 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/37295f61-8ba4-4fcd-b890-4809b37a31d6
+Jun 06 11:47:03.263 HYPERVISOR: exec_cmd: vm create PC3 5 c7200 
+Jun 06 11:47:03.263 VM: VM PC3 created.
+Jun 06 11:47:03.264 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC3 5005 
+Jun 06 11:47:03.264 HYPERVISOR: exec_cmd: c7200 get_mac_addr PC3 
+Jun 06 11:47:03.264 HYPERVISOR: exec_cmd: vm get_status PC3 
+Jun 06 11:47:03.264 HYPERVISOR: exec_cmd: vm slot_add_binding PC3 0 0 C7200-IO-FE 
+Jun 06 11:47:03.265 HYPERVISOR: exec_cmd: vm set_disk0 PC3 0 
+Jun 06 11:47:03.266 HYPERVISOR: exec_cmd: vm get_status PC3 
+Jun 06 11:47:03.266 HYPERVISOR: exec_cmd: vm set_idle_pc PC3 0x60189214 
+Jun 06 11:47:03.267 HYPERVISOR: exec_cmd: vm set_ios PC3 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jun 06 11:47:03.268 HYPERVISOR: exec_cmd: c7200 set_mac_addr PC3 ca05.32d9.0000 
+Jun 06 11:47:03.268 HYPERVISOR: exec_cmd: vm set_nvram PC3 512 
+Jun 06 11:47:03.269 HYPERVISOR: exec_cmd: vm set_ram PC3 512 
+Jun 06 11:47:03.270 HYPERVISOR: exec_cmd: vm get_status PC3 
+Jun 06 11:47:03.270 HYPERVISOR: exec_cmd: vm slot_add_binding PC3 1 0 PA-FE-TX 
+Jun 06 11:47:05.572 HYPERVISOR: exec_cmd: nio create_udp udp-6b520c65-3faa-4fc2-85f6-0a6ce8083f7e 10028 127.0.0.1 10029 
+Jun 06 11:47:05.789 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 0 0 udp-6b520c65-3faa-4fc2-85f6-0a6ce8083f7e 
+Jun 06 11:47:05.790 HYPERVISOR: exec_cmd: vm get_status PC3 

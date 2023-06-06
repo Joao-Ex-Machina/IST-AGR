@@ -1,0 +1,41 @@
+May 30 14:58:36.153 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 30 14:58:36.153 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48595.
+May 30 14:58:36.157 HYPERVISOR: exec_cmd: hypervisor version 
+May 30 14:58:36.158 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips 
+May 30 14:58:36.158 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips
+May 30 14:58:36.159 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/bff255eb-b9ec-4286-808e-c70cca5742e4 
+May 30 14:58:36.159 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/bff255eb-b9ec-4286-808e-c70cca5742e4
+May 30 14:58:36.159 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+May 30 14:58:36.161 VM: VM R2 created.
+May 30 14:58:36.161 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 30 14:58:36.162 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+May 30 14:58:36.162 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:36.162 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+May 30 14:58:36.163 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 30 14:58:36.164 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:36.164 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60189214 
+May 30 14:58:36.165 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 14:58:36.165 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.2e71.0000 
+May 30 14:58:36.166 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+May 30 14:58:36.167 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+May 30 14:58:36.168 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:36.168 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-FE-TX 
+May 30 14:58:36.169 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:36.169 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-FE-TX 
+May 30 14:58:37.332 HYPERVISOR: exec_cmd: nio create_udp udp-b43a141e-c57a-4211-8c3a-a168f63cdaa1 10004 127.0.0.1 10005 
+May 30 14:58:37.565 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-b43a141e-c57a-4211-8c3a-a168f63cdaa1 
+May 30 14:58:37.566 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:37.750 HYPERVISOR: exec_cmd: nio create_udp udp-c87d47ef-d4f3-4376-b732-77e1ec25f1b0 10008 127.0.0.1 10009 
+May 30 14:58:37.753 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-c87d47ef-d4f3-4376-b732-77e1ec25f1b0 
+May 30 14:58:37.754 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 14:58:38.178 HYPERVISOR: exec_cmd: nio create_udp udp-32fa57dd-e84f-4b43-9456-9247c77fd628 10014 127.0.0.1 10015 
+May 30 14:58:38.182 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 2 0 udp-32fa57dd-e84f-4b43-9456-9247c77fd628 
+May 30 14:58:38.183 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 17:36:56.084 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 30 17:36:56.086 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+May 30 17:36:56.086 HYPERVISOR: exec_cmd: vm get_status R2 
+May 30 17:36:56.088 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+May 30 17:36:56.088 HYPERVISOR: exec_cmd: vm start R2 
+May 30 17:41:42.014 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 17:41:49.671 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 18:10:56.437 HYPERVISOR: exec_cmd: vm extract_config R2 

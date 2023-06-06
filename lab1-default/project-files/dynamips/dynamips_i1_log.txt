@@ -1,0 +1,58 @@
+Jun 03 21:21:03.840 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 03 21:21:03.840 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35359.
+Jun 03 21:21:03.851 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 21:21:03.852 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips 
+Jun 03 21:21:03.852 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips
+Jun 03 21:21:03.853 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips/eac7ba18-8a3f-4256-9cb3-f9baf3c7e050 
+Jun 03 21:21:03.853 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips/eac7ba18-8a3f-4256-9cb3-f9baf3c7e050
+Jun 03 21:21:03.853 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Jun 03 21:21:03.855 VM: VM R1 created.
+Jun 03 21:21:03.856 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5014 
+Jun 03 21:21:03.857 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Jun 03 21:21:03.857 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.857 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Jun 03 21:21:03.858 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 03 21:21:03.859 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.859 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60189214 
+Jun 03 21:21:03.861 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jun 03 21:21:03.861 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.9cb0.0000 
+Jun 03 21:21:03.862 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Jun 03 21:21:03.862 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Jun 03 21:21:03.863 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.863 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-FE-TX 
+Jun 03 21:21:03.864 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.864 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-FE-TX 
+Jun 03 21:21:03.865 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.865 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-FE-TX 
+Jun 03 21:21:03.865 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.866 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 PA-FE-TX 
+Jun 03 21:21:03.866 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.866 HYPERVISOR: exec_cmd: vm slot_add_binding R1 5 0 PA-FE-TX 
+Jun 03 21:21:03.867 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:03.867 HYPERVISOR: exec_cmd: vm slot_add_binding R1 6 0 PA-FE-TX 
+Jun 03 21:21:05.023 HYPERVISOR: exec_cmd: nio create_udp udp-c798d8f9-846d-46e7-b777-34bc3d923708 10008 127.0.0.1 10009 
+Jun 03 21:21:05.240 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-c798d8f9-846d-46e7-b777-34bc3d923708 
+Jun 03 21:21:05.241 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:21:06.194 HYPERVISOR: exec_cmd: nio create_udp udp-1d42f0e8-0537-4663-9da8-a974555187ae 10022 127.0.0.1 10023 
+Jun 03 21:21:06.197 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-1d42f0e8-0537-4663-9da8-a974555187ae 
+Jun 03 21:21:06.198 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:22:58.044 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 03 21:22:58.044 VM: VM Ghost created.
+Jun 03 21:22:58.046 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jun 03 21:22:58.052 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 03 21:22:58.064 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jun 03 21:22:58.066 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 03 21:22:58.070 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 03 21:22:58.072 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jun 03 21:22:58.076 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 03 21:22:59.095 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 03 21:22:59.096 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 03 21:22:59.313 VM: VM Ghost shutdown.
+Jun 03 21:22:59.314 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 03 21:22:59.316 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 03 21:22:59.316 VM: VM Ghost destroyed.
+Jun 03 21:22:59.318 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jun 03 21:22:59.319 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab1-default/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jun 03 21:22:59.320 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 03 21:22:59.321 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg configs/i1_private-config.cfg 
+Jun 03 21:22:59.322 HYPERVISOR: exec_cmd: vm start R1 

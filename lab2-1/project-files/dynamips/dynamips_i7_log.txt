@@ -1,0 +1,25 @@
+Jun 06 11:47:03.341 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 11:47:03.341 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47981.
+Jun 06 11:47:03.346 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 11:47:03.346 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips 
+Jun 06 11:47:03.346 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips
+Jun 06 11:47:03.347 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/3f09e119-21df-4330-9d69-5a3a6a045a6a 
+Jun 06 11:47:03.347 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/3f09e119-21df-4330-9d69-5a3a6a045a6a
+Jun 06 11:47:03.347 HYPERVISOR: exec_cmd: vm create PC4 6 c7200 
+Jun 06 11:47:03.347 VM: VM PC4 created.
+Jun 06 11:47:03.347 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5006 
+Jun 06 11:47:03.347 HYPERVISOR: exec_cmd: c7200 get_mac_addr PC4 
+Jun 06 11:47:03.348 HYPERVISOR: exec_cmd: vm get_status PC4 
+Jun 06 11:47:03.348 HYPERVISOR: exec_cmd: vm slot_add_binding PC4 0 0 C7200-IO-FE 
+Jun 06 11:47:03.348 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
+Jun 06 11:47:03.348 HYPERVISOR: exec_cmd: vm get_status PC4 
+Jun 06 11:47:03.349 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x60189214 
+Jun 06 11:47:03.349 HYPERVISOR: exec_cmd: vm set_ios PC4 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jun 06 11:47:03.349 HYPERVISOR: exec_cmd: c7200 set_mac_addr PC4 ca06.335e.0000 
+Jun 06 11:47:03.350 HYPERVISOR: exec_cmd: vm set_nvram PC4 512 
+Jun 06 11:47:03.350 HYPERVISOR: exec_cmd: vm set_ram PC4 512 
+Jun 06 11:47:03.350 HYPERVISOR: exec_cmd: vm get_status PC4 
+Jun 06 11:47:03.350 HYPERVISOR: exec_cmd: vm slot_add_binding PC4 1 0 PA-FE-TX 
+Jun 06 11:47:06.008 HYPERVISOR: exec_cmd: nio create_udp udp-71e9df79-fde5-47ff-981f-3d2efb3fbb2c 10032 127.0.0.1 10033 
+Jun 06 11:47:06.226 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-71e9df79-fde5-47ff-981f-3d2efb3fbb2c 
+Jun 06 11:47:06.227 HYPERVISOR: exec_cmd: vm get_status PC4 

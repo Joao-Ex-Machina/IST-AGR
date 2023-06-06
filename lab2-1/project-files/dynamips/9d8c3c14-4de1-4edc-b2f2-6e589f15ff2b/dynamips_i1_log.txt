@@ -1,0 +1,46 @@
+May 30 14:58:35.930 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 30 14:58:35.930 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47981.
+May 30 14:58:35.941 HYPERVISOR: exec_cmd: hypervisor version 
+May 30 14:58:35.942 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips 
+May 30 14:58:35.942 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips
+May 30 14:58:35.943 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/9d8c3c14-4de1-4edc-b2f2-6e589f15ff2b 
+May 30 14:58:35.943 GENERAL: working_dir=/home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/9d8c3c14-4de1-4edc-b2f2-6e589f15ff2b
+May 30 14:58:35.943 HYPERVISOR: exec_cmd: vm create PC1 1 c7200 
+May 30 14:58:35.945 VM: VM PC1 created.
+May 30 14:58:35.945 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC1 5000 
+May 30 14:58:35.946 HYPERVISOR: exec_cmd: c7200 get_mac_addr PC1 
+May 30 14:58:35.946 HYPERVISOR: exec_cmd: vm get_status PC1 
+May 30 14:58:35.947 HYPERVISOR: exec_cmd: vm slot_add_binding PC1 0 0 C7200-IO-FE 
+May 30 14:58:35.947 HYPERVISOR: exec_cmd: vm set_disk0 PC1 0 
+May 30 14:58:35.948 HYPERVISOR: exec_cmd: vm get_status PC1 
+May 30 14:58:35.948 HYPERVISOR: exec_cmd: vm set_idle_pc PC1 0x60189214 
+May 30 14:58:35.950 HYPERVISOR: exec_cmd: vm set_ios PC1 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 14:58:35.951 HYPERVISOR: exec_cmd: c7200 set_mac_addr PC1 ca01.2e20.0000 
+May 30 14:58:35.951 HYPERVISOR: exec_cmd: vm set_nvram PC1 512 
+May 30 14:58:35.952 HYPERVISOR: exec_cmd: vm set_ram PC1 512 
+May 30 14:58:35.952 HYPERVISOR: exec_cmd: vm get_status PC1 
+May 30 14:58:35.953 HYPERVISOR: exec_cmd: vm slot_add_binding PC1 1 0 PA-FE-TX 
+May 30 14:58:37.054 HYPERVISOR: exec_cmd: nio create_udp udp-8e8564cc-58b0-438b-ba4f-922218030f66 10002 127.0.0.1 10003 
+May 30 14:58:37.282 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC1 0 0 udp-8e8564cc-58b0-438b-ba4f-922218030f66 
+May 30 14:58:37.283 HYPERVISOR: exec_cmd: vm get_status PC1 
+May 30 17:36:54.810 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 30 17:36:54.811 VM: VM Ghost created.
+May 30 17:36:54.815 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+May 30 17:36:54.815 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 30 17:36:54.817 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+May 30 17:36:54.818 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 30 17:36:54.819 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 30 17:36:54.820 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+May 30 17:36:54.820 HYPERVISOR: exec_cmd: vm start Ghost 
+May 30 17:36:55.855 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 30 17:36:55.857 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 30 17:36:56.078 VM: VM Ghost shutdown.
+May 30 17:36:56.079 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 30 17:36:56.080 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 30 17:36:56.080 VM: VM Ghost destroyed.
+May 30 17:36:56.083 HYPERVISOR: exec_cmd: vm set_ghost_status PC1 2 
+May 30 17:36:56.083 HYPERVISOR: exec_cmd: vm set_ghost_file PC1 /home/jbcr/Desktop/IST/3ano/AGR/Labs/lab2-1/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+May 30 17:36:56.084 HYPERVISOR: exec_cmd: vm get_status PC1 
+May 30 17:36:56.085 HYPERVISOR: exec_cmd: vm set_config PC1 configs/i1_startup-config.cfg configs/i1_private-config.cfg 
+May 30 17:36:56.086 HYPERVISOR: exec_cmd: vm start PC1 
+May 30 17:41:52.606 HYPERVISOR: exec_cmd: vm set_ios PC1 /home/jbcr/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
